@@ -1,0 +1,45 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    </div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+	    <div class="col-md-12">
+	        <h2 >{{title}}</h2>
+	    </div>
+	</div>
+	<hr>
+	<div class="row">
+	    <div style="width:300px;float:left">
+	        <img class="img-responsive" class="img-responsive" src="{{pic}}" alt="">
+	    </div>
+	    <div style="width:200px;float:left; margin: 20px">
+	    	<h4><b>Description</b></h4>
+                <p>{{description}}</p>
+	        <h1>R$ {{price}}</h1>
+				<p><i>Offered by: {{currentBidder}}</i></p>
+	        
+			<div *ngIf = "ableToBid == true">
+				<input  [(ngModel)]="bidValue" class="form-control" style="margin-bottom:10px">
+				<button class="btn btn-default" (click)="bid()">Place Bid</button>
+			</div>
+
+			<div style="color:red" *ngIf = "ableToBid == false">
+				<h4 >FIM DE LEILAO</h4>
+			</div>
+	    </div>
+		<div stype = "width:200px;float:right; margin: 20px">
+			<h1><b>Your Information</b></h1>
+                <h3>Your name: {{user}}</h3>
+				<h3>Your last bid: R$ {{lastBid}}</h3>
+	       
+			<h2></h2>
+		</div>
+	</div>
+	<hr>
+</div>
+
+
+

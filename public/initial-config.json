@@ -1,0 +1,23 @@
+{
+    "_initial": "setting the initial parameters for bidder and price",
+    "initialPrice": 5,
+    "initialBidder": "Oferta Inicial",
+
+    "_timeout": "milliseconds",
+    "_initialTimeout": "Quanto tempo o server espera pela primeira oferta",
+    "initialTimeout": 600000,
+    "_bidTimeout": "Quanto tempo o server espera após uma oferta",
+    "bidTimeout": 30000,
+    "_waitTimeout": "Quanto tempo o server espera para receber a resposta de todos os usuários conectados no leilão",
+    "waitTimeout": 300000,
+
+
+    "globalNames": ["Abacate", "Mendigo dos Mares", "Farofa", 
+    "Jorel", "Vovo Juju", "Vovo Gigi", "Gesonel O Mestre Dos Disfarces", 
+    "Shostners & Shostners", "Steve Magal", "Irmao do Jorel", "Nico", "Yamagata"],
+    "usedNames": [],
+    
+    "description": "Aproveite o nosso pacote e fique forte para o Verão de 2017.",
+    "title": "Pacote Verão 2017",
+    "pic": "images/calango.jpg"
+}
